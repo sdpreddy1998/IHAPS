@@ -5,6 +5,7 @@ import  Economic from "./images/Economic.png"
 import  Social from "./images/Social.png"
 import  Educational from "./images/Educational.png"
 import  Environmental from "./images/Environmental.png"
+import  Logo from "./images/IHAPS-LOGO.png"
 import React   from 'react';
 import {AppBar,Typography,Toolbar} from '@mui/material'
 
@@ -32,6 +33,7 @@ function Home() {
   }
   ]
   return (
+    
     <div className="main_container">
       <AppBar position="static" color="default">
         <Toolbar>
@@ -40,10 +42,12 @@ function Home() {
           </Typography>
         </Toolbar>
       </AppBar>
-
+      <div className="logo">
+      <img src={Logo} target="blank" className="logo"/>
+      </div>
       <div className='first_section'>
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-            Institute for Human and Planetary Sustainability
+            <Typography component="h1" variant="h3" align="center"  color="textPrimary" gutterBottom>
+                     Institute for Human and Planetary Sustainability
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
             It is to promote innovative solutions and sustainable outcomes to global challenges through a multi-disciplinary approach bringing social, economic, environmental, and educational perspectives to the forefront.
