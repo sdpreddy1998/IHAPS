@@ -11,7 +11,7 @@ import {AppBar,Typography,Toolbar} from '@mui/material'
 function Participation() {
 
     return (
-        <div className="main_container" style={{ backgroundColor: "rgb(223,246,221)" }}>
+        <div className="main_container" style={{ backgroundColor: "white" }}>
             <div className='first_section'>
                 <img src={Homeimage} target="blank" className='homepageimage' />
             </div>

@@ -1,3 +1,6 @@
+.body{
+  font-family: 'Open Sans', sans-serif;
+}
 .main_container{
   position:absolute;
   top:0px;
@@ -83,7 +86,7 @@ li a {
 .main-content{
   height: fit-content;
   width: 100%;
-  background-color: rgb(223,246,221);
+  background-color: white;
 }
 .third-section{
   
@@ -184,7 +187,7 @@ justify-content: center;
 .course-container{
   display: flex;
   justify-content:center;
-  background-color: rgb(223,246,221);
+  background-color: white;
 }
 .items{
   display: flex;
@@ -258,7 +261,7 @@ td:hover {
 .course-container-login{
   display: flex;
   justify-content:space-between;
-  background-color:rgb(223,246,221);
+  background-color:white;
 }
 .input-name-small{
   font-size: large;
@@ -310,6 +313,72 @@ td:hover {
 .appbar-row{
   display: flex;
   flex-direction: row;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(8,48,83);
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:rgb(8,48,83);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(8,48,83);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 

@@ -1,41 +1,41 @@
 import './App.css';
-import {Link} from "react-router-dom";
-import  Homeimage from "./images/homepageimage.png";
-import  Economic from "./images/Economic.png"
-import  Social from "./images/Social.png"
-import  Educational from "./images/Educational.png"
-import  Environmental from "./images/Environmental.png"
-import  Logo from "./images/IHAPS-LOGO.png"
-import React   from 'react';
+import { Link } from "react-router-dom";
+import Homeimage from "./images/homepageimage.png";
+import Economic from "./images/Economic.png"
+import Social from "./images/Social.png"
+import Educational from "./images/Educational.png"
+import Environmental from "./images/Environmental.png"
+import Logo from "./images/IHAPS-LOGO.png"
+import React from 'react';
 import Appbar from './Appbar';
 import Footer from './Footer';
-import {AppBar,Typography,Toolbar} from '@mui/material'
+import { AppBar, Typography, Toolbar } from '@mui/material'
 function Home() {
-  const handleClick=()=>{
+  const handleClick = () => {
     window.open("https://www.uhcl.edu/sustainability/about/")
   }
-  const content=[
+  const content = [
     {
-    heading:"Social",
-    matter:"Creates diverse, eqitable, and inclusive societies that enable access, support wellness, improve quality of life, and increase citizen engagement.",
-  },
-  {
-    heading:"Economic",
-    matter:" Builds and supports long-term economic growth that optimizes resources, improves productivity, and increases efficiencies without negatively impacting the other dimensions.",
-  },
-  {
-    heading:"Environmental",
-    matter:"Protects, restores, and promotes ecosystems that prevent or mitigate vulnerbilities and harmful impacts to environmental resillience",
-  },
-  {
-    heading:"Educational",
-    matter:"Enhances the sharing and development of knowledge and experiences that suppport the other dimensions and creates a culture of continuous improvement, collaboration, and innovation.",
-  }
+      heading: "Social",
+      matter: "Creates diverse, eqitable, and inclusive societies that enable access, support wellness, improve quality of life, and increase citizen engagement.",
+    },
+    {
+      heading: "Economic",
+      matter: " Builds and supports long-term economic growth that optimizes resources, improves productivity, and increases efficiencies without negatively impacting the other dimensions.",
+    },
+    {
+      heading: "Environmental",
+      matter: "Protects, restores, and promotes ecosystems that prevent or mitigate vulnerbilities and harmful impacts to environmental resillience",
+    },
+    {
+      heading: "Educational",
+      matter: "Enhances the sharing and development of knowledge and experiences that suppport the other dimensions and creates a culture of continuous improvement, collaboration, and innovation.",
+    }
   ]
   return (
-    
+
     <div className="main_container">
-      <Appbar/>
+      <Appbar />
       {/* <div className="logo">
       <img src={Logo} target="blank" className="logo"/>
       </div>
@@ -48,12 +48,36 @@ function Home() {
             </Typography>
       </div> */}
       <div className='second_section'>
-        <ul>
+        {/* <ul>
          <Link to ="/" style={{  textDecoration: "none"}} ><li><a>Home</a></li></Link>
-         <Link to ="/Participation" style={{  textDecoration: "none"}}> <li><a>Login/Sign Up</a></li></Link>
+         <Link to ="/Participation" style={{  textDecoration: "none"}}> <li><a>Login/Sign Up</a></li><Link to ="/Participation" style={{  textDecoration: "none"}}>
          <Link to="/Workgroupsreport"  style={{  textDecoration: "none"}}><li><a >Reports and Data</a></li></Link>
          <li><a onClick={handleClick}>About IHAPS</a></li>
-        </ul>
+        </ul> */}
+        <div class="navbar">
+          <Link to="/"> <a href="#home">Home</a></Link>
+          <Link to="/Participation"><a href="#news">Login/Sign Up</a></Link>
+          <div class="dropdown">
+            <button class="dropbtn">Reports and Data
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <Link to="/Curriculum"><a href="#">Curriculum</a></Link>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">About IHAPS
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="main-content">
         <div className="third-section">
@@ -70,27 +94,27 @@ function Home() {
         </div>
         <div className='fourth_section'>
           <div className='Sustanability_heading'>
-         The Four Dimensions of Sustainability
+            The Four Dimensions of Sustainability
           </div>
           <div className='center-images'>
             <img src={Social} target="blank" className='center-image-width' />
-            <img src={Economic} target="blank"  className='center-image-width'/>
+            <img src={Economic} target="blank" className='center-image-width' />
             <img src={Environmental} target="blank" className='center-image-width' />
-            <img src={Educational} target="blank"  className='center-image-width'/>
+            <img src={Educational} target="blank" className='center-image-width' />
           </div>
         </div>
         <div className='fifth-section'>
           {
-            content.map((ele,index)=>(
+            content.map((ele, index) => (
               <div className='content_container'>
-              <div className='content_heading'>{ele.heading}</div>
-              <div className='content_matter'>{ele.matter}</div>
+                <div className='content_heading'>{ele.heading}</div>
+                <div className='content_matter'>{ele.matter}</div>
               </div>
             ))
           }
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
