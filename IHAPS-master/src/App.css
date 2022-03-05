@@ -20,6 +20,21 @@
   width: 100%;
   height:100%;
 }
+.footer-row{
+  display: flex;
+  justify-content: space-between;
+  margin:20px
+}
+.logo-footer{ 
+	position:relative; 
+	top:0px;
+	left:0px; 
+  right:0px;
+  float: left; 
+  width:100px;
+  height:100px;
+  margin:10px;
+}
 .logo{ 
 	position:relative; 
 	top:0px;
@@ -244,7 +259,6 @@ td:hover {
   display: flex;
   justify-content:space-between;
   background-color:rgb(223,246,221);
-  margin-right: 100px;
 }
 .input-name-small{
   font-size: large;
@@ -292,6 +306,10 @@ td:hover {
 
 .sidenav a:hover {
   color: #f1f1f1;
+}
+.appbar-row{
+  display: flex;
+  flex-direction: row;
 }
 
 

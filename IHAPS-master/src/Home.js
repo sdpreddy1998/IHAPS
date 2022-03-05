@@ -7,9 +7,9 @@ import  Educational from "./images/Educational.png"
 import  Environmental from "./images/Environmental.png"
 import  Logo from "./images/IHAPS-LOGO.png"
 import React   from 'react';
+import Appbar from './Appbar';
+import Footer from './Footer';
 import {AppBar,Typography,Toolbar} from '@mui/material'
-
-
 function Home() {
   const handleClick=()=>{
     window.open("https://www.uhcl.edu/sustainability/about/")
@@ -35,14 +35,8 @@ function Home() {
   return (
     
     <div className="main_container">
-      <AppBar position="static" color="default">
-        <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-          Institute for Human and Planetary Sustainability
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <div className="logo">
+      <Appbar/>
+      {/* <div className="logo">
       <img src={Logo} target="blank" className="logo"/>
       </div>
       <div className='first_section'>
@@ -52,7 +46,7 @@ function Home() {
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
             It is to promote innovative solutions and sustainable outcomes to global challenges through a multi-disciplinary approach bringing social, economic, environmental, and educational perspectives to the forefront.
             </Typography>
-      </div>
+      </div> */}
       <div className='second_section'>
         <ul>
          <Link to ="/" style={{  textDecoration: "none"}} ><li><a>Home</a></li></Link>
@@ -96,14 +90,7 @@ function Home() {
           }
         </div>
       </div>
-      <footer>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-      </footer>
+      <Footer/>
     </div>
   );
 }
