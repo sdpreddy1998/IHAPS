@@ -2,13 +2,16 @@ import './App.css';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 import React , { Component}  from 'react';
-
+import Appbar from './Appbar';
+import Footer from './Footer';
+import { AppBar, Typography, Toolbar } from '@mui/material'
 
 function StudentSustain() {
 
     return (
         <>
             <div className="main_container" style={{ backgroundColor: "rgb(223,246,221)" }}>
+                <Appbar/>
                 <div className='course-heading'>
                 Student Sustainability Groups, Programs, and Initiatives 
                 </div>
@@ -126,6 +129,7 @@ function StudentSustain() {
                         dsadlf;ka
                     </div>
                 </div>
+                <Footer/>
             </div>
         </>
     );

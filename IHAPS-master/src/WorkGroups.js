@@ -3,14 +3,19 @@ import Button from '@mui/material/Button';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import { Link } from "react-router-dom";
 import React , { Component}  from 'react';
+import Appbar from './Appbar';
+import Footer from './Footer';
+import { AppBar, Typography, Toolbar } from '@mui/material'
 
 function WorkGroups() {
 
   return (
     <>
-      <div className="main_container" style={{ backgroundColor: "rgb(223,246,221)" }}>
+      <div className="main_container" style={{ backgroundColor: "white" }}>
+        <Appbar/>
         <div className='second_section'>
           <ul>
+            
           <Link to="/Curriculum" style={{  textDecoration: "none"}} ><li><a >Curriculum</a></li></Link>
           <Link to="/ResearchandScholorship" style={{  textDecoration: "none"}} ><li><a >Research and Scholorship</a></li></Link>
           <Link to="/Communityengagement" style={{  textDecoration: "none"}} ><li><a >Community Engagement</a></li></Link>
@@ -26,6 +31,7 @@ function WorkGroups() {
       </Button>
       </Link>
         </div>
+        <Footer/>
       </div>
     </>
   );

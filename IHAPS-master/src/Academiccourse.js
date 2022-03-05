@@ -2,12 +2,16 @@ import './App.css';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 import React , { Component}  from 'react';
+import Appbar from './Appbar';
+import Footer from './Footer';
+import { AppBar, Typography, Toolbar } from '@mui/material'
 
 function Academiccourse() {
 
     return (
         <>
             <div className="main_container" style={{ backgroundColor: "rgb(223,246,221)" }}>
+                <Appbar/>
                 <div className='course-heading'>
                     Academic Courses
                 </div>
@@ -111,6 +115,7 @@ function Academiccourse() {
                         dsadlf;ka
                     </div>
                 </div>
+                <Footer/>
             </div>
         </>
     );

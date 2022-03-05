@@ -1,12 +1,15 @@
 import './App.css';
 import React , { Component}  from 'react';
 import {Link} from "react-router-dom";
-
+import Appbar from './Appbar';
+import Footer from './Footer';
+import { AppBar, Typography, Toolbar } from '@mui/material'
 function Curriculum() {
 
     return (
         <>
             <div className="main_container" style={{ backgroundColor: "white" }}>
+                <Appbar/>
                 <div className='second_section' >
                     <ul style={{ height: "100px", display: "flex", alignItems: "center" }}>
                         <li style={{ cursor: "none" }}><a >CURRICULUM FORMS</a></li>
@@ -40,7 +43,7 @@ function Curriculum() {
                         </div>
                     </div>
                 </div>
-
+                <Footer/>
             </div>
         </>
     );

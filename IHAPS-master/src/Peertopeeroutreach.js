@@ -2,6 +2,9 @@ import './App.css';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 import React , { Component}  from 'react';
+import Appbar from './Appbar';
+import Footer from './Footer';
+import { AppBar, Typography, Toolbar } from '@mui/material'
 
 
 function Peertopeeroutreach() {
@@ -9,6 +12,7 @@ function Peertopeeroutreach() {
     return (
         <>
             <div className="main_container" style={{ backgroundColor: "rgb(223,246,221)" }}>
+                <Appbar/>
                 <div className='course-heading'>
                     Peer-to-Peer Outreach
                 </div>
@@ -160,6 +164,7 @@ function Peertopeeroutreach() {
                         dsadlf;ka
                     </div>
                 </div>
+                <Footer/>
             </div>
         </>
     );

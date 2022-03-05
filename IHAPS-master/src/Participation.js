@@ -4,17 +4,14 @@ import Button from '@mui/material/Button';
 import React, { Component }  from 'react';
 import { Link } from "react-router-dom";
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-import {AppBar,Typography,Toolbar} from '@mui/material'
-
-
-
+import Appbar from './Appbar';
+import Footer from './Footer';
+import { AppBar, Typography, Toolbar } from '@mui/material'
 function Participation() {
 
     return (
         <div className="main_container" style={{ backgroundColor: "white" }}>
-            <div className='first_section'>
-                <img src={Homeimage} target="blank" className='homepageimage' />
-            </div>
+            <Appbar/>
             <div className='second_section'>
                 <ul className='participation-bar'>
                     <li>
@@ -51,6 +48,7 @@ function Participation() {
                     Participation in IHAPS  involves collecting information about our institution’s sustainability initiatives and performance, documenting that information in standard format, and submitting a report to AASHE to earn public recognition.
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

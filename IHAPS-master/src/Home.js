@@ -55,8 +55,24 @@ function Home() {
          <li><a onClick={handleClick}>About IHAPS</a></li>
         </ul> */}
         <div class="navbar">
-          <Link to="/"> <a href="#home">Home</a></Link>
-          <Link to="/Participation"><a href="#news">Login/Sign Up</a></Link>
+          <div class="dropdown">
+            <button class="dropbtn">Home
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <Link to="/"><a href=""></a></Link>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Login & Sign Up
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <Link to="/Register"><a href="#">Sign Up</a></Link>
+              <Link to="/Login"><a href="#">Login</a></Link>
+              <Link to="/WorkGroups"><a href="#">Work Groups</a></Link>
+            </div>
+          </div>
           <div class="dropdown">
             <button class="dropbtn">Reports and Data
               <i class="fa fa-caret-down"></i>
@@ -72,9 +88,6 @@ function Home() {
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
             </div>
           </div>
         </div>
