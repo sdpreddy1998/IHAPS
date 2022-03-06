@@ -8,10 +8,10 @@ function FoodAndWaste() {
 
     return (
         <>
-            <div className="main_container" style={{ backgroundColor: "rgb(223,246,221)" }}>
+            <div className="main_container" >
                 <Appbar/>
                 <div className='second_section' >
-                    <ul style={{ height: "100px", display: "flex", alignItems: "center" }}>
+                    <ul  className="main-box" style={{ height: "100px", display: "flex", alignItems: "center" }}>
                         <li style={{ cursor: "none" }}><a >FOOD AND WASTE (AND PURCHASING) FORMS</a></li>
                     </ul>
                 </div>

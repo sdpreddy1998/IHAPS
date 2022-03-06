@@ -7,6 +7,7 @@ import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import Appbar from './Appbar';
 import Footer from './Footer';
 import { AppBar, Typography, Toolbar } from '@mui/material'
+
 function Participation() {
 
     return (

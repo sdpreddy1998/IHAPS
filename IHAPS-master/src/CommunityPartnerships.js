@@ -11,7 +11,7 @@ function CommunityPartnerships() {
 
     return (
         <>
-            <div className="main_container" style={{ backgroundColor: "rgb(223,246,221)" }}>
+            <div className="main_container" >
                 <Appbar/>
                 <div className='course-heading'>
                     Community Partnerships

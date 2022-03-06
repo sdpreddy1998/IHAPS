@@ -10,6 +10,8 @@ import React from 'react';
 import Appbar from './Appbar';
 import Footer from './Footer';
 import { AppBar, Typography, Toolbar } from '@mui/material'
+import Navigationbar from './Navigationbar';
+import Topappbar from './Topappbar';
 function Home() {
   const handleClick = () => {
     window.open("https://www.uhcl.edu/sustainability/about/")
@@ -35,6 +37,7 @@ function Home() {
   return (
 
     <div className="main_container">
+      <Topappbar/>
       <Appbar />
       {/* <div className="logo">
       <img src={Logo} target="blank" className="logo"/>
@@ -48,49 +51,7 @@ function Home() {
             </Typography>
       </div> */}
       <div className='second_section'>
-        {/* <ul>
-         <Link to ="/" style={{  textDecoration: "none"}} ><li><a>Home</a></li></Link>
-         <Link to ="/Participation" style={{  textDecoration: "none"}}> <li><a>Login/Sign Up</a></li><Link to ="/Participation" style={{  textDecoration: "none"}}>
-         <Link to="/Workgroupsreport"  style={{  textDecoration: "none"}}><li><a >Reports and Data</a></li></Link>
-         <li><a onClick={handleClick}>About IHAPS</a></li>
-        </ul> */}
-        <div class="navbar">
-          <div class="dropdown">
-            <button class="dropbtn">Home
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <Link to="/"><a href=""></a></Link>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Login & Sign Up
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <Link to="/Register"><a href="#">Sign Up</a></Link>
-              <Link to="/Login"><a href="#">Login</a></Link>
-              <Link to="/WorkGroups"><a href="#">Work Groups</a></Link>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Reports and Data
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <Link to="/Curriculum"><a href="#">Curriculum</a></Link>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">About IHAPS
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-            </div>
-          </div>
-        </div>
+        <Navigationbar />
       </div>
       <div className="main-content">
         <div className="third-section">

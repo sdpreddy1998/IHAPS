@@ -14,8 +14,7 @@ function WorkGroups() {
       <div className="main_container" style={{ backgroundColor: "white" }}>
         <Appbar/>
         <div className='second_section'>
-          <ul>
-            
+          <ul className='main-box'>
           <Link to="/Curriculum" style={{  textDecoration: "none"}} ><li><a >Curriculum</a></li></Link>
           <Link to="/ResearchandScholorship" style={{  textDecoration: "none"}} ><li><a >Research and Scholorship</a></li></Link>
           <Link to="/Communityengagement" style={{  textDecoration: "none"}} ><li><a >Community Engagement</a></li></Link>

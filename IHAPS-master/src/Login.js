@@ -7,10 +7,10 @@ import Footer from './Footer';
 
 function Login() {
     return (
-        <div className="main_container" style={{ backgroundColor: "rgb(223,246,221)" }}>
+        <div className="main_container" >
             <Appbar/>
             <div className='second_section' >
-                <ul style={{ height: "100px", display: "flex", alignItems: "center" }}>
+                <ul className="main-box" style={{ height: "100px", display: "flex", alignItems: "center" }}>
                     <li style={{ fontSize: 40, color: "white" }}>Login</li>
                 </ul>
             </div>

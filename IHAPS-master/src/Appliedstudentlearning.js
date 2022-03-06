@@ -1,16 +1,17 @@
 import './App.css';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
-import React , { Component}  from 'react';
+import React , { Component,useState}  from 'react';
 import Appbar from './Appbar';
 import Footer from './Footer';
 import { AppBar, Typography, Toolbar } from '@mui/material'
 
 function Appliedstudentlearning() {
+  
 
     return (
         <>
-            <div className="main_container" style={{ backgroundColor: "rgb(223,246,221)" }}>
+            <div className="main_container" >
                 <Appbar/>
                 <div className='course-heading'>
                     Applied Student Learning
@@ -94,7 +95,8 @@ function Appliedstudentlearning() {
                             URL (if available)
                             </div>
                             <div className='input-text'>
-                                <input type="text" style={{ height: 80, width: "250%" }} />
+                                <textarea id="w3review" name="w3review" rows="4" cols="50">
+                                </textarea>
                             </div>
                         </div>
                         <div className='items'>

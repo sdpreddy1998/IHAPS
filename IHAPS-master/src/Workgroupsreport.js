@@ -8,7 +8,7 @@ import { AppBar, Typography, Toolbar } from '@mui/material'
 
 function Workgroupsreport() {
     return (
-        <div className="main_container" style={{ backgroundColor: "rgb(223,246,221)" }}>
+        <div className="main_container">
             <Appbar/>
             <div className='sixth_section' >
                 <ul style={{ height: "80px", display: "flex", alignItems: "center" }}>
