@@ -5,13 +5,17 @@ import React , { Component}  from 'react';
 import Appbar from './Appbar';
 import Footer from './Footer';
 import { AppBar, Typography, Toolbar } from '@mui/material'
+import Topappbar from './Topappbar';
+import Navigationbar from './Navigationbar';
 
 function SusFoodandBeverage() {
 
     return (
         <>
             <div className="main_container" >
+                <Topappbar/>
                 <Appbar/>
+                <Navigationbar/>
                 <div className='course-heading'>
                 Sustainable Food and Beverage Purchasing Inventory
                 </div>

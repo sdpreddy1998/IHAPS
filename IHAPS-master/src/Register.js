@@ -6,13 +6,15 @@ import Appbar from './Appbar';
 import Footer from './Footer';
 import { AppBar, Typography, Toolbar } from '@mui/material'
 import Navigationbar from './Navigationbar';
+import Topappbar from './Topappbar';
 function Register() {
     return (
         <div className="main_container" >
+            <Topappbar/>
             <Appbar/>
             <Navigationbar/>
             <div className='second_section' >
-                <ul className="main-box" style={{ height: "100px", display: "flex", alignItems: "center" }}>
+                <ul className="main-box" style={{ height: "80px", display: "flex", alignItems: "center" }}>
                     <li style={{ fontSize: 40, color: "white" }}>Sign Up</li>
                 </ul>
             </div>

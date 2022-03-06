@@ -7,12 +7,16 @@ import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import Appbar from './Appbar';
 import Footer from './Footer';
 import { AppBar, Typography, Toolbar } from '@mui/material'
+import Topappbar from './Topappbar';
+import Navigationbar from './Navigationbar';
 
 function Participation() {
 
     return (
         <div className="main_container" style={{ backgroundColor: "white" }}>
+            <Topappbar/>
             <Appbar/>
+            <Navigationbar/>
             <div className='second_section'>
                 <ul className='participation-bar'>
                     <li>

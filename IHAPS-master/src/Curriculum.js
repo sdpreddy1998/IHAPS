@@ -4,12 +4,16 @@ import {Link} from "react-router-dom";
 import Appbar from './Appbar';
 import Footer from './Footer';
 import { AppBar, Typography, Toolbar } from '@mui/material'
+import Topappbar from './Topappbar';
+import Navigationbar from './Navigationbar';
 function Curriculum() {
 
     return (
         <>
             <div className="main_container" style={{ backgroundColor: "white" }}>
+                <Topappbar/>
                 <Appbar/>
+                <Navigationbar/>
                 <div className='second_section' >
                     <ul  className="main-box" style={{ height: "100px", display: "flex", alignItems: "center" }}>
                         <li style={{ cursor: "none" }}><a >CURRICULUM FORMS</a></li>

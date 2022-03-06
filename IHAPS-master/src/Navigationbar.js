@@ -5,7 +5,7 @@ import Logo from "./images/IHAPS-LOGO.png"
 import { Link } from "react-router-dom";
 export default function Navigationbar() {
    const  handleHome=()=>{
-    window.location.reload();
+    window.location='/';
     }
     return (
         <>

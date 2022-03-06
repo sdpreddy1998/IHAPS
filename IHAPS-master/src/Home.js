@@ -14,7 +14,7 @@ import Navigationbar from './Navigationbar';
 import Topappbar from './Topappbar';
 function Home() {
   const handleClick = () => {
-    window.open("https://www.uhcl.edu/sustainability/about/")
+    window.location='/';
   }
   const content = [
     {

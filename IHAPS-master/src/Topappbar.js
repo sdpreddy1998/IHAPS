@@ -12,7 +12,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import DirectionsIcon from '@mui/icons-material/Directions';
 export default function Topappbar() {
     const handleIHAPSHome=()=>{
-        window.location.reload();
+        window.location="/";
     }
     return (
         <>

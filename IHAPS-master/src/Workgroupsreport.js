@@ -5,11 +5,14 @@ import React , { Component}  from 'react';
 import Appbar from './Appbar';
 import Footer from './Footer';
 import { AppBar, Typography, Toolbar } from '@mui/material'
-
+import Topappbar from './Topappbar';
+import Navigationbar from './Navigationbar';
 function Workgroupsreport() {
     return (
         <div className="main_container">
+            <Topappbar/>
             <Appbar/>
+            <Navigationbar/>
             <div className='sixth_section' >
                 <ul style={{ height: "80px", display: "flex", alignItems: "center" }}>
                     <li style={{ font:'bold', fontSize: 25,fontStyle:'normal', color: "white" }}>WORK GROUPS REPORT</li>

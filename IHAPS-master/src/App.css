@@ -407,8 +407,10 @@ background-color:   #1e4e63;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  height:40px;
   overflow: hidden;
-  background-color:rgb(8,48,83);
+  background-color:#b2f013;
+  font-family: sans-serif;
   display: flex;
   justify-content: space-around;
 }
