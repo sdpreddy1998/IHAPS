@@ -10,7 +10,7 @@ function StaffDevelopment() {
 
     return (
         <>
-            <div className="main_container" style={{ backgroundColor: "rgb(223,246,221)" }}>
+            <div className="main_container" style={{ backgroundColor:"skyblue"}}>
                 <Appbar/>
                 <div className='course-heading'>
                     Staff Professional Development

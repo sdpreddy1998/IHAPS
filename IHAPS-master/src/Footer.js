@@ -17,7 +17,7 @@ export default function Footer() {
                         </Typography>
                         <div classname="appbar-row">
                             <Typography component="h1" variant="h5" color="textPrimary" gutterBottom style={{ textAlign: "left", marginTop: 35, marginLeft: 20,width:"700px" }}>
-                                Institute for Human and Planetary Sustainability
+                                Institute for Human and Planetary Sustainability (IHAPS)
                             </Typography>
                             <Typography align="center" variant="h7" color="textSecondary" paragraph style={{ textAlign: "left", marginLeft: 20 }}>
                                 Innovative Solutions for Sustainable Future
