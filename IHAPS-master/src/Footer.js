@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <>
             <AppBar position="static" color="default" >
-                <Toolbar className='footer-row'>
+                <Toolbar className='footer-row' >
                     <div>
                         <Typography>
                             <img src={Logo} target="blank" className="logo-footer" />

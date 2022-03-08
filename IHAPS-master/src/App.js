@@ -23,6 +23,8 @@ import Login from "./Login"
 import Register from "./Register"
 import "./App.css";
 import Workgroupsreport from "./Workgroupsreport"
+import ExecutiveDirector from "./ExecutiveDirector";
+import About from "./About"
 const RoutesApp = () => {
   return (
       <Routes basename='/index.html'>
@@ -48,6 +50,12 @@ const RoutesApp = () => {
         <Route path="/Login" element={<Login/>}/>
         <Route path="/Register" element={<Register/>}/>
         <Route path="/Workgroupsreport" element={<Workgroupsreport/>}/>
+        <Route path="/About" element={<About/>}/>
+        <Route path="/ExecutiveDirector" element={<ExecutiveDirector/>}/>
+
+
+
+
 
       </Routes>
   )

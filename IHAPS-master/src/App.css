@@ -281,8 +281,8 @@ td:hover {
   font-weight: 500;
 }
 .sidenav {
-  height: 85%;
-  width: 300px;
+  height: 500px;
+  width: 350px;
   position: fixed;
   z-index: 1;
   top: 50;
@@ -298,12 +298,13 @@ td:hover {
 }
 
 .sidenav a {
-  padding: 15px 15px 15px 16px;
+  padding: 5px;
   text-align: center;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 18px;
   color: white;
   display: block;
+  overflow: auto;
 }
 
 .sidenav a:hover {
@@ -355,7 +356,7 @@ td:hover {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 10px 12px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -379,7 +380,7 @@ td:hover {
 .dropdown-content a {
   float: none;
   color: white;
-  padding: 12px 16px;
+  padding: 6px 10px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -423,6 +424,19 @@ background-color:   #1e4e63;
   display: flex;
   justify-content: space-around;
 }
+.main-box-for-contents{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height:50px;
+  font-size:12px;
+  overflow: hidden;
+  background-color:#215f80;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-around;
+
+}
 .contact {
   font-size: 20px;
   font-family: sans-serif;
@@ -430,11 +444,17 @@ background-color:   #1e4e63;
 }
 li{
   cursor: pointer;
+  color:black;
 }
 li:hover{
   color: #047bad;
-  font-size: 40px;
 }
+hr.solid {
+  border: 0;
+  border-top: 3px solid white;
+}
+
+
 
 
 @media screen and (max-height: 450px) {

@@ -18,7 +18,7 @@ function WorkGroups() {
         <Appbar/>
         <Navigationbar/>
         <div className='second_section'>
-          <ul className='main-box'>
+          <ul className='main-box-for-contents'>
           <Link to="/Curriculum" style={{  textDecoration: "none"}} ><li><a >Curriculum</a></li></Link>
           <Link to="/ResearchandScholorship" style={{  textDecoration: "none"}} ><li><a >Research and Scholorship</a></li></Link>
           <Link to="/Communityengagement" style={{  textDecoration: "none"}} ><li><a >Community Engagement</a></li></Link>

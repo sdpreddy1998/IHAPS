@@ -5,14 +5,17 @@ import Logo from "./images/IHAPS-LOGO.png"
 import { Link } from "react-router-dom";
 import Participation from './Participation';
 export default function Navigationbar() {
-   const  handleHome=()=>{
-    window.location='/';
+    const handleHome = () => {
+        window.location = '/';
     }
-   const  handleWorkgroupsreport=()=>{
-    window.location='#/Workgroupsreport';
+    const handleWorkgroupsreport = () => {
+        window.location = '#/Workgroupsreport';
     }
-    const  handleParticipation=()=>{
-    window.location='#/Participation';
+    const handleParticipation = () => {
+        window.location = '#/Participation';
+    }
+    const handleAbout = () => {
+        window.location = '#/About';
     }
     return (
         <>
@@ -29,7 +32,7 @@ export default function Navigationbar() {
                     <div class="dropdown-content">
                         <Link to="/Register"><a href="">Sign Up</a></Link>
                         <Link to="/Login"><a href="">Login</a></Link>
-                        <Link to="/WorkGroups"><a href="">Work Groups</a></Link>
+                        <Link to="/Workgroups"><a href="">Work Groups</a></Link>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -48,10 +51,11 @@ export default function Navigationbar() {
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn">About IHAPS
+                    <button class="dropbtn" onClick={handleAbout}>About IHAPS
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
+                    <Link to="/ExecutiveDirector"><a href="">Executive Director</a></Link>
                     </div>
                 </div>
             </div>

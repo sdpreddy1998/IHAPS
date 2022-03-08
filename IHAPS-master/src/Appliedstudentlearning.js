@@ -1,7 +1,7 @@
 import './App.css';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
-import React , { Component,useState}  from 'react';
+import React, { Component, useState } from 'react';
 import Appbar from './Appbar';
 import Footer from './Footer';
 import { AppBar, Typography, Toolbar } from '@mui/material'
@@ -9,8 +9,11 @@ import Topappbar from './Topappbar';
 import Navigationbar from './Navigationbar';
 
 function Appliedstudentlearning() {
-  
 
+    const Upload = (e) => {
+        let files = e.target.files;
+        console.log("data file", files)
+    }
     return (
         <>
             <div className="main_container" >
@@ -88,7 +91,7 @@ function Appliedstudentlearning() {
                         </div>
                         <div className='items'>
                             <div className='input-name-extra-large'>
-                            Project Date(s):
+                                Project Date(s):
                             </div>
                             <div className='input-text'>
                                 <input type="text" />
@@ -96,7 +99,7 @@ function Appliedstudentlearning() {
                         </div>
                         <div className='items'>
                             <div className='input-name-extra-large'>
-                            URL (if available)
+                                URL (if available)
                             </div>
                             <div className='input-text'>
                                 <textarea id="w3review" name="w3review" rows="4" cols="50">
@@ -105,15 +108,15 @@ function Appliedstudentlearning() {
                         </div>
                         <div className='items'>
                             <div className='input-name-extra-large'>
-                            Upload relevant docs
+                                Upload relevant docs
                             </div>
                             <div className='input-text'>
-                            <input type="button" value="Upload" style={{width:100,height:30}}/>
+                                <input type="file" name="file" style={{ width: 100, height: 30 }} onClick={(e) => Upload(e)} />
                             </div>
                         </div>
-                        
+
                         <div className='submit-button'>
-                            <Link to="/" style={{  textDecoration: "none"}}>
+                            <Link to="/" style={{ textDecoration: "none" }}>
                                 <Button variant="contained" style={{ height: 50, width: "200%" }}>
                                     Submit
                                 </Button>
@@ -124,7 +127,7 @@ function Appliedstudentlearning() {
                         dsadlf;ka
                     </div>
                 </div>
-                <Footer/>
+                <Footer />
             </div>
         </>
     );
