@@ -56,7 +56,7 @@ function Register() {
                     </div>
                     <div className='items'>
                         <div className='input-name-small'>
-                            Student ID/ Faculty ID
+                           Position
                         </div>
                         <div className='input-text'>
                             <input type="text" />

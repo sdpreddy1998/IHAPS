@@ -1,13 +1,25 @@
 import './App.css';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
-import React , { Component}  from 'react';
+import React , { Component, useState}  from 'react';
 import Appbar from './Appbar';
 import Footer from './Footer';
 import Topappbar from './Topappbar';
 import Navigationbar from './Navigationbar';
 
 function Login() {
+    const [email,setEmail]=useState("");
+    const [password,setPassword]=useState("");
+    const handleSubmit=()=>{
+        console.log(email,password)
+        if(email==="sai@gmail.com")
+        {
+            if(password==="Saikota123@")
+            {
+                window.location="/WorkGroups"
+            }
+        }
+    }
     return (
         <div className="main_container" >
             <Topappbar/>
@@ -43,7 +55,7 @@ function Login() {
                             UHCL Email
                         </div>
                         <div className='input-text'>
-                            <input type="text" />
+                            <input type="text" onChange={e => setEmail(e.target.value)}/>
                         </div>
                     </div>
                     <div className='items'>
@@ -51,13 +63,13 @@ function Login() {
                             Password
                         </div>
                         <div className='input-text'>
-                            <input type="text" />
+                            <input type="text" onChange={e => setPassword(e.target.value)} />
                         </div>
                     </div>
 
                     <div className='submit-button'>
                         <Link to="/WorkGroups" style={{  textDecoration: "none"}}>
-                            <Button variant="contained" style={{ height: 50, width: "200%" }}>
+                            <Button variant="contained" style={{ height: 50, width: "200%" }} onCLick={handleSubmit}>
                                 Submit
                             </Button>
                         </Link>
