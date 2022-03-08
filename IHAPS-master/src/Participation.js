@@ -9,9 +9,7 @@ import Footer from './Footer';
 import { AppBar, Typography, Toolbar } from '@mui/material'
 import Topappbar from './Topappbar';
 import Navigationbar from './Navigationbar';
-
 function Participation() {
-
     return (
         <div className="main_container" style={{ backgroundColor: "white" }}>
             <Topappbar/>

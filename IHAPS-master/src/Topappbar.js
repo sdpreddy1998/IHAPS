@@ -19,13 +19,15 @@ export default function Topappbar() {
             <div style={{display:"flex",flexDirection:"row"}}>
                 <div className='top-app-bar'>
                     <ul className="Top-bar-list">
-                        <li onClick={handleIHAPSHome}>IHAPS Home</li><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>
-                        <a href="https://www.aashe.org/" target="blank" style={{textDecoration:"none"}}><li>AASHE</li></a><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>
-                        <li>Conference</li><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>
-                        <li>Community</li><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>
-                        <li>Resource HUb</li><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>
-                        <li>Bulletin</li>
+                        <li onClick={handleIHAPSHome}>IHAPS Home</li><span style={{ fontWeight: 80, fontSize: 20 }}>&#47;</span>
+                        <a href="https://www.uhcl.edu/sustainability/about/" target="blank" style={{textDecoration:"none"}}><li>About</li></a><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>
+                        <a href="https://www.uhcl.edu/sustainability/history/" target="blank" style={{textDecoration:"none"}}><li>History</li></a><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>
+                        <a href="https://www.uhcl.edu/sustainability/news-events/" target="blank" style={{textDecoration:"none"}}><li>News and Events</li></a><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>
+                        <a href="https://www.uhcl.edu/sustainability/research-grant/" target="blank" style={{textDecoration:"none"}}><li>Research</li></a><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>
+                        <a href="https://www.uhcl.edu/sustainability/resources" target="blank" style={{textDecoration:"none"}}><li>Resources</li></a><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>
+                        <a href="https://www.uhcl.edu/sustainability/about/executive-director" target="blank" style={{textDecoration:"none"}}><li>Executive Director</li></a><span style={{ fontWeight: 800, fontSize: 20 }}/>
                     </ul>
+
 
                 </div>
                 <Paper
@@ -38,7 +40,7 @@ export default function Topappbar() {
                         inputProps={{ 'aria-label': 'search' }}
                     />
                      
-                    <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
+                    <IconButton type="submit" sx={{ p: '10x' }} aria-label="search">
                         <SearchIcon />
                     </IconButton>
                 </Paper>

@@ -13,7 +13,7 @@ export default function Searchbar() {
         this.onSearchClick = this.onSearchClick.bind(this);
     };
     onSearchClick(event) => {
-        let url = 'http://localhost:3000/search' + encodeURI(this.state.search) + '&json=1';
+        let url = 'http://google.com' + encodeURI(this.state.search) + '&json=1';
         axios.get(url)
             .then(response => {
                 let data = {

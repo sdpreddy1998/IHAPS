@@ -16,8 +16,8 @@ export default function Footer() {
                             <img src={Logo} target="blank" className="logo-footer" />
                         </Typography>
                         <div classname="appbar-row">
-                            <Typography component="h1" variant="h5" color="textPrimary" gutterBottom style={{ textAlign: "left", marginTop: 35, marginLeft: 20,width:"700px" }}>
-                                Institute for Human and Planetary Sustainability (IHAPS)
+                            <Typography component="h1" variant="h5" color="textPrimary" gutterBottom style={{ textAlign: "left",marginTop: 35, fontWeight:"800",marginLeft: 20,width:"700px" }}>
+                                Institute for Human and Planetary Sustainability
                             </Typography>
                             <Typography align="center" variant="h7" color="textSecondary" paragraph style={{ textAlign: "left", marginLeft: 20 }}>
                                 Innovative Solutions for Sustainable Future
@@ -26,19 +26,21 @@ export default function Footer() {
                     </div>
                     <div style={{ marginRight: 50 }}>
                         <Typography variant="h7" color="textPrimary" >
-                            <p>Address:</p>
-                            <p>2401 Walnut Street</p>
-                            <p>Suite 102</p>
-                            <p> Philadelphia, PA 19103</p>
-                            <p> 888-347-9997</p>
-                            <p> stars@aashe.org</p>
+                            <div class="contact">
+                                Contact Us
+                            </div>
+                            <p>University of Houston Clear Lake</p>
+                            <p>Institute for Human and Planetary Sustainability</p>
+                            <p> Phone: 281-283-2055</p>
+                            <p>Email: ihaps@uhcl.edu</p>
+                
                         </Typography>
                     </div>
-                    <div style={{marginRight:100,cursor:"pointer"}}>
+                    <div style={{marginTop: 100,cursor:"pointer",marginRight:50}}>
                         <Typography>
-                            Contact Us:
+
                         </Typography>
-                        <a href="https://google.com" >
+                        <a href="mailto:ihaps@uhcl.edu" target={'blank'} >
                         <EmailIcon />
                         </a>
                         <LinkedInIcon />

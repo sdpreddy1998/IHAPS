@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { Route, Routes } from 'react-router-dom';
 import WorkGroups from "./WorkGroups";
@@ -25,12 +23,11 @@ import Login from "./Login"
 import Register from "./Register"
 import "./App.css";
 import Workgroupsreport from "./Workgroupsreport"
-
-
 const RoutesApp = () => {
   return (
       <Routes basename='/index.html'>
         <Route path="/"  element={<Home/>}/>
+        <Route path="/Participation" element={<Participation/>}/>
         <Route path="/WorkGroups" element={<WorkGroups/>}/>
         <Route path="/Curriculum" element={<Curriculum/>}/>
         <Route path="/Academiccourse"  element={<Academiccourse/>}/>
@@ -46,9 +43,8 @@ const RoutesApp = () => {
         <Route path="/FacultySusResearchService" element={<FacultySusResearchService/>}/>
         <Route path="/ResearchandScholorship" element={<ResearchandScholorship/>}/>
         <Route path="/FoodAndWaste" element={<FoodAndWaste/>}/>
-        <Route path="SusFoodandBeverage" element={<SusFoodandBeverage/>}/>
+        <Route path="/SusFoodandBeverage" element={<SusFoodandBeverage/>}/>
         <Route path="/AirAndTransportation" element={<AirandTransportation/>}/>
-        <Route path="/Participation" element={<Participation/>}/>
         <Route path="/Login" element={<Login/>}/>
         <Route path="/Register" element={<Register/>}/>
         <Route path="/Workgroupsreport" element={<Workgroupsreport/>}/>

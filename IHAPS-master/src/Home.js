@@ -13,9 +13,6 @@ import { AppBar, Typography, Toolbar } from '@mui/material'
 import Navigationbar from './Navigationbar';
 import Topappbar from './Topappbar';
 function Home() {
-  const handleClick = () => {
-    window.location='/';
-  }
   const content = [
     {
       heading: "Social",
@@ -92,5 +89,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;
