@@ -57,11 +57,14 @@ export default function Navigationbar() {
                     <div class="dropdown-content">
                         <Link to="/Curriculum"><a href="">Curriculum</a></Link>
                         <Link to="/ResearchandScholorship"><a href="">Research and Scholorship</a></Link>
-                        <Link to="/Curriculum"><a href="">Curriculum</a></Link>
-                        <Link to="/Curriculum"><a href="">Curriculum</a></Link>
-                        <Link to="/Curriculum"><a href="">Curriculum</a></Link>
-                        <Link to="/Curriculum"><a href="">Curriculum</a></Link>
-                        <Link to="/Curriculum"><a href="">Curriculum</a></Link>
+                        <Link to="/"><a href="">Co-ordination and Planning</a></Link>
+                        <Link to="/"><a href="">Campus and Community Engagement</a></Link>
+                        <Link to="/"><a href="">Diversity,Equity and Wellbeing at work</a></Link>
+                        <Link to="/"><a href="">Purchasing</a></Link>
+                        <Link to="/"><a href="">Food and Waste</a></Link>
+                        <Link to="/"><a href="">Air and Transportation</a></Link>
+                        <Link to="/"><a href="">Energy and Buildings</a></Link>
+                        <Link to="/"><a href="">Grounds and Water</a></Link>
                     </div>
                 </div>
                 <div class="dropdown">

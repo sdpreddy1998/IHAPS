@@ -18,6 +18,7 @@ import Peertopeeroutreach from "./Peertopeeroutreach";
 import FoodAndWaste from "./FoodAndWaste";
 import SusFoodandBeverage from "./SusFoodandBeverage";
 import AirandTransportation from "./AirAndTransportation";
+import CampusFleetAndSusTransit from "./CampusFleetAndSusTransit";
 import Participation from './Participation'
 import Login from "./Login"
 import Register from "./Register"
@@ -47,6 +48,7 @@ const RoutesApp = () => {
         <Route path="/FoodAndWaste" element={<FoodAndWaste/>}/>
         <Route path="/SusFoodandBeverage" element={<SusFoodandBeverage/>}/>
         <Route path="/AirAndTransportation" element={<AirandTransportation/>}/>
+        <Route path="/CampusFleetAndSusTransit" element={<CampusFleetAndSusTransit/>}/>
         <Route path="/Login" element={<Login/>}/>
         <Route path="/Register" element={<Register/>}/>
         <Route path="/Workgroupsreport" element={<Workgroupsreport/>}/>
