@@ -17,23 +17,27 @@ function WorkGroups() {
         <Topappbar/>
         <Appbar/>
         <Navigationbar/>
-        <div className='second_section'>
-          <ul className='main-box-for-contents'>
-          <Link to="/Curriculum" style={{  textDecoration: "none"}} ><li><a >Curriculum</a></li></Link>
-          <Link to="/ResearchandScholorship" style={{  textDecoration: "none"}} ><li><a >Research and Scholorship</a></li></Link>
-          <Link to="/Communityengagement" style={{  textDecoration: "none"}} ><li><a >Community Engagement</a></li></Link>
-          <Link to="/FoodAndWaste" style={{  textDecoration: "none"}} ><li><a >Food and Waste (and Purchasing)</a></li></Link>
-          <Link to="/AirandTransportation" style={{  textDecoration: "none"}} ><li><a >Air and Transportation</a></li></Link>
-          <Link to="/OtherWorkGroups" style={{  textDecoration: "none"}} ><li><a >Other Work Groups</a></li></Link>
-          </ul>
-        </div>
-        <div className="back-button">
-          <Link to="/">
-        <Button variant="contained" startIcon={<KeyboardArrowLeftIcon />} >
-        Back
-      </Button>
-      </Link>
-        </div>
+        <div className='sixth_section' >
+                <ul  className="main-box" style={{ height: "80px", display: "flex", alignItems: "center" }}>
+                    <li style={{ font:'bold', fontSize: 25,fontStyle:'normal', color: "white" }}>Work Groups</li>
+                </ul>
+            </div>
+            <div class="sidenav" style={{position:"relative",marginTop:30,marginBottom:30}}>
+               <Link to="/Curriculum"> <a>Curriculum</a></Link>
+               <hr class="solid"/>
+               <Link to="/ResearchAndScholorship"> <a>Research and Scholorship</a></Link>
+               <hr class="solid"/>
+               <Link to="/Communityengagement"> <a>Community Engagement</a></Link>
+               <hr class="solid"/>
+               <Link to="/FoodAndWaste"> <a>Food and Waste(and Purchasing)</a></Link>
+               <hr class="solid"/>
+               <Link to="/AirAndTransportation"> <a>Air and Transportation</a></Link>
+               <hr class="solid"/>
+               <Link to="/OtherWorkGroups"> <a>Other Work Groups</a></Link>
+               <hr class="solid"/>
+            </div>
+        
+      
         <Footer/>
       </div>
     </>

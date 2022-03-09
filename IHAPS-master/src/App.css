@@ -289,7 +289,7 @@ td:hover {
   font-style:normal;
 }
 .sidenav {
-  height: 500px;
+  height: 350px;
   width: 350px;
   position: fixed;
   z-index: 1;
