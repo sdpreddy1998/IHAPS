@@ -17,6 +17,9 @@ export default function Navigationbar() {
     const handleAbout = () => {
         window.location = '#/About';
     }
+    const handleWorkGroups = () => {
+        window.location = '#/WorkGroups';
+    }
     return (
         <>
             <div class="navbar">
@@ -26,13 +29,25 @@ export default function Navigationbar() {
                     </button>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn" onClick={handleParticipation}>Login & Sign Up
+                    <button class="dropbtn" onClick={handleAbout}>About IHAPS
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <Link to="/Register"><a href="">Sign Up</a></Link>
-                        <Link to="/Login"><a href="">Login</a></Link>
-                        <Link to="/Workgroups"><a href="">Work Groups</a></Link>
+                    <Link to="/ExecutiveDirector"><a href="">Executive Director</a></Link>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onClick={handleWorkGroups}>WorkGroups
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <Link to="/Curriculum"><a href="">Curriculum</a></Link>
+                        <Link to="/ResearchandScholorship"><a href="">Research and Scholorship</a></Link>
+                        <Link to="/Communityengagement"><a href="">Community Engagement</a></Link>
+                        <Link to="/FoodAndWaste"><a href="">Food and Waste</a></Link>
+                        <Link to="/AirandTransportation"><a href="">Air and Transportation</a></Link>
+                        <Link to="/OtherWorkGroups"><a href="">Other Work Groups</a></Link>
+
                     </div>
                 </div>
                 <div class="dropdown">
@@ -42,7 +57,6 @@ export default function Navigationbar() {
                     <div class="dropdown-content">
                         <Link to="/Curriculum"><a href="">Curriculum</a></Link>
                         <Link to="/ResearchandScholorship"><a href="">Research and Scholorship</a></Link>
-                        <Link to="/"><a href="">Curriculum</a></Link>
                         <Link to="/Curriculum"><a href="">Curriculum</a></Link>
                         <Link to="/Curriculum"><a href="">Curriculum</a></Link>
                         <Link to="/Curriculum"><a href="">Curriculum</a></Link>
@@ -51,11 +65,12 @@ export default function Navigationbar() {
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn" onClick={handleAbout}>About IHAPS
+                    <button class="dropbtn" onClick={handleParticipation}>Login & Sign Up
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                    <Link to="/ExecutiveDirector"><a href="">Executive Director</a></Link>
+                        <Link to="/Register"><a href="">Sign Up</a></Link>
+                        <Link to="/Login"><a href="">Login</a></Link>
                     </div>
                 </div>
             </div>

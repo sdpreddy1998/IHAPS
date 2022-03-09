@@ -58,10 +58,12 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:rgb(8,48,83);
+  background-color:#215f80;
   display: flex;
-  justify-content: space-between;
-
+  height: 80px;
+  justify-content:center;
+  font-display: flex;
+  align-items: center;
 }
 
 
@@ -72,8 +74,10 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
+  align-items: center;
+  font-display: center;
 
 }
 .main-content{
@@ -202,6 +206,8 @@ justify-content: center;
   font-size: xx-large;
   font-weight: 600;
   margin-top: 40px;
+  font-family: sans-serif;
+
 }
 .input-name{
   font-size: large;
@@ -232,6 +238,7 @@ justify-content: center;
 .welcome-text{
   font-size: 30px;
   font-weight: bolder;
+  font-family: sans-serif;
   color:rgb(255, 255, 255);
   justify-content: center;
   text-align: center;
@@ -276,9 +283,10 @@ td:hover {
   margin-right: auto;
   text-align: center;
   width:70%;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight:0;
+  font-family: sans-serif;
   font-style:normal;
-  font-weight: 500;
 }
 .sidenav {
   height: 500px;
@@ -287,7 +295,7 @@ td:hover {
   z-index: 1;
   top: 50;
   left: 0;
-  background-color: rgb(8,48,83);
+  background-color:#215f80;
   overflow-x: hidden;
   padding-top: 20px;
 
@@ -305,6 +313,7 @@ td:hover {
   color: white;
   display: block;
   overflow: auto;
+  font-family: sans-serif;
 }
 
 .sidenav a:hover {
@@ -416,7 +425,7 @@ background-color:   #1e4e63;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  height:100px;
+  height: 80px;
   font-size:1px;
   overflow: hidden;
   background-color:#215f80;
@@ -428,13 +437,14 @@ background-color:   #1e4e63;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  height:50px;
+  height:80px;
   font-size:12px;
   overflow: hidden;
   background-color:#215f80;
   font-family: sans-serif;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
 }
 .contact {
@@ -443,11 +453,9 @@ background-color:   #1e4e63;
   font-weight: 800;
 }
 li{
-  cursor: pointer;
   color:black;
 }
 li:hover{
-  color: #047bad;
 }
 hr.solid {
   border: 0;
@@ -457,9 +465,12 @@ hr.solid {
   width:80em;
   margin-left: auto;
   margin-right: auto;
+  font-size:20px ;
+  font-family: sans-serif;
 }
 .about-list-item{
   font-size: 20px;
+  font-family: sans-serif;
 }
 
 

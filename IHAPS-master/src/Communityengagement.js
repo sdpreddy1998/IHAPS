@@ -16,8 +16,8 @@ function Communityengagement() {
                 <Appbar/>
                 <Navigationbar/>
                 <div className='second_section' >
-                    <ul className="main-box" style={{ height: "100px", display: "flex", alignItems: "center" }}>
-                        <li style={{ cursor: "none" }}><a >CAMPUS AND COMMUNITY ENGAGEMENT FORMS</a></li>
+                    <ul className="main-box" style={{ height: "80px",fontFamily:'sans-serif' ,display: "flex", alignItems: "center" }}>
+                        <li style={{ cursor: "none" }}><a >Campus and Community Engagement</a></li>
                     </ul>
                 </div>
                 <div className='total-boxes'>

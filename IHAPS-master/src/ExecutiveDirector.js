@@ -15,8 +15,8 @@ function ExecutiveDirector() {
             <Appbar />
             <Navigationbar />
             <div className='second_section' >
-                <ul className="main-box" style={{ height: "100px", display: "flex", alignItems: "center" }}>
-                    <li style={{ fontSize: 40, color: "white" }}>Executive Director</li>
+                <ul className="main-box" style={{ height: "80px",fontFamily:'san-serif',display: "flex", alignItems: "center" }}>
+                    <li style={{ fontSize: 40, fontFamily:'sans-serif',color: "white" }}>Executive Director</li>
                 </ul>
             </div>
             <div style={{padding:"5px 45px"}}>

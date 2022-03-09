@@ -26,7 +26,7 @@ function Login() {
             <Appbar/>
             <Navigationbar/>
             <div className='second_section' >
-                <ul className="main-box" style={{ height: "100px", display: "flex", alignItems: "center" }}>
+                <ul className="main-box" style={{ height: "80px",fontFamily:'sans-serif' ,display: "flex", alignItems: "center" }}>
                     <li style={{ fontSize: 40, color: "white" }}>Login</li>
                 </ul>
             </div>

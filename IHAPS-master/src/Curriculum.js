@@ -15,7 +15,7 @@ function Curriculum() {
                 <Appbar/>
                 <Navigationbar/>
                 <div className='second_section' >
-                    <ul  className="main-box" style={{ height: "100px", display: "flex", alignItems: "center" }}>
+                    <ul  className="main-box" style={{ height: "80px",fontFamily:'sans-serif',display: "flex", alignItems: "center" }}>
                         <li style={{ cursor: "none" }}><a >CURRICULUM FORMS</a></li>
                     </ul>
                 </div>

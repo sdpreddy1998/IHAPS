@@ -20,8 +20,10 @@ function Appliedstudentlearning() {
                 <Topappbar/>
                 <Appbar/>
                 <Navigationbar/>
-                <div className='course-heading'>
-                    Applied Student Learning
+                <div className='second_section' >
+                    <ul  className="main-box" style={{ height: "80px", fontFamily:'sans-serif', display: "flex", alignItems: "center" }}>
+                        <li style={{ cursor: "none" }}><a > Applied Student Learning</a></li>
+                    </ul>
                 </div>
                 <div className='course-container'>
                     <div className='academiccourse-items'>

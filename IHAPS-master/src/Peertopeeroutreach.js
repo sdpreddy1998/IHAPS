@@ -17,8 +17,10 @@ function Peertopeeroutreach() {
                 <Topappbar/>
                 <Appbar/>
                 <Navigationbar/>
-                <div className='course-heading'>
-                    Peer-to-Peer Outreach
+                <div className='second_section' >
+                    <ul  className="main-box" style={{ height: "80px", fontFamily:'sans-serif', display: "flex", alignItems: "center" }}>
+                        <li style={{ cursor: "none" }}><a > Peer-to-Peer Outreach</a></li>
+                    </ul>
                 </div>
                 <div className='course-container'>
                     <div className='academiccourse-items'>

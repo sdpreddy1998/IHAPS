@@ -16,8 +16,10 @@ function Academiccourse() {
                 <Topappbar/>
                 <Appbar/>
                 <Navigationbar/>
-                <div className='course-heading'>
-                    Academic Courses
+                <div className='second_section' >
+                    <ul  className="main-box" style={{ height: "80px", fontFamily:'sans-serif', display: "flex", alignItems: "center" }}>
+                        <li style={{ cursor: "none" }}><a > Academic Courses</a></li>
+                    </ul>
                 </div>
                 <div className='course-container'>
                     <div className='academiccourse-items'>

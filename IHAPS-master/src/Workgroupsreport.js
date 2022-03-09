@@ -15,7 +15,7 @@ function Workgroupsreport() {
             <Navigationbar/>
             <div className='sixth_section' >
                 <ul  className="main-box" style={{ height: "80px", display: "flex", alignItems: "center" }}>
-                    <li style={{ font:'bold', fontSize: 25,fontStyle:'normal', color: "white" }}>WORK GROUPS REPORT</li>
+                    <li style={{ font:'bold', fontSize: 25,fontStyle:'normal', color: "white" }}>Work Groups Report</li>
                 </ul>
             </div>
             <div class="sidenav" style={{position:"relative",marginTop:30,marginBottom:30}}>

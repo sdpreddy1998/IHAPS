@@ -17,14 +17,7 @@ function Participation() {
             <Navigationbar/>
             <div className='second_section'>
                 <ul className='participation-bar'>
-                    <li>
-                        <Link to="/">
-                            <Button variant="contained" startIcon={<KeyboardArrowLeftIcon />}>
-                                Home
-                            </Button>
-                        </Link>
-                    </li>
-                    <li className='welcome-text'>WELCOME TO IHAPS</li>
+                    <li className='welcome-text'>Login / Sign Up</li>
                     <li className='visibility'>dskfasdkf</li>
                 </ul>
             </div>

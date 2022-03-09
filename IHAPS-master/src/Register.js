@@ -14,7 +14,7 @@ function Register() {
             <Appbar/>
             <Navigationbar/>
             <div className='second_section' >
-                <ul className="main-box" style={{ height: "80px", display: "flex", alignItems: "center" }}>
+                <ul className="main-box" style={{ height: "80px", fontfamily:'sans-serif',display: "flex", alignItems: "center" }}>
                     <li style={{ fontSize: 40, color: "white" }}>Sign Up</li>
                 </ul>
             </div>

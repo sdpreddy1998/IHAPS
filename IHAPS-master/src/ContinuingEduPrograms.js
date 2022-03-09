@@ -17,8 +17,10 @@ function ContinuingEduPrograms() {
                 <Topappbar/>
                 <Appbar/>
                 <Navigationbar/>
-                <div className='course-heading'>
-                    Continuing Education Programs
+                <div className='second_section' >
+                    <ul  className="main-box" style={{ height: "80px", fontFamily:'sans-serif', display: "flex", alignItems: "center" }}>
+                        <li style={{ cursor: "none" }}><a > Continuing Education Programs</a></li>
+                    </ul>
                 </div>
                 <div className='course-container'>
                     <div className='academiccourse-items'>

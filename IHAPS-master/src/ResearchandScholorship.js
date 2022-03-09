@@ -16,8 +16,8 @@ function ResearchandScholorship() {
                 <Appbar/>
                 <Navigationbar/>
                 <div className='second_section' >
-                    <ul  className="main-box" style={{ height: "100px", display: "flex", alignItems: "center" }}>
-                        <li style={{ cursor: "none" }}><a >RESEARCH AND SCHOLORSHIP FORMS</a></li>
+                    <ul  className="main-box" style={{ height: "80px", fontFamily:'sans-serif',display: "flex", alignItems: "center" }}>
+                        <li style={{ cursor: "none" }}><a >Research And Scholorship Forms</a></li>
                     </ul>
                 </div>
                 <div className='total-boxes'>
