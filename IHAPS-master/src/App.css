@@ -454,8 +454,10 @@ background-color:   #1e4e63;
 }
 li{
   color:black;
+  cursor: pointer;
 }
 li:hover{
+  cursor: pointer;
 }
 hr.solid {
   border: 0;

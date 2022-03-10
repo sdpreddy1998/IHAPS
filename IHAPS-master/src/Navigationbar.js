@@ -1,35 +1,38 @@
 
 import { AppBar, Typography, Toolbar } from '@mui/material'
 import React from 'react';
-import Logo from "./images/IHAPS-LOGO.png"
+// import Logo from "./images/IHAPS-LOGO.png"
 import { Link } from "react-router-dom";
-import Participation from './Participation';
+import { useNavigate } from "react-router-dom";
+// import Participation from './Participation';
 export default function Navigationbar() {
-    const handleHome = () => {
-        window.location = '/';
-    }
-    const handleWorkgroupsreport = () => {
-        window.location = '#/Workgroupsreport';
-    }
-    const handleParticipation = () => {
-        window.location = '#/Participation';
-    }
-    const handleAbout = () => {
-        window.location = '#/About';
-    }
-    const handleWorkGroups = () => {
-        window.location = '#/WorkGroups';
-    }
+    const navigate = useNavigate();
+    
+    // const handleHome = () => {
+    //     window.location = '#/';
+    // }
+    // const handleWorkgroupsreport = () => {
+    //     window.location = '#/Workgroupsreport';
+    // }
+    // const handleParticipation = () => {
+    //     window.location = '#/Participation';
+    // }
+    // const handleAbout = () => {
+    //     window.location = '#/About';
+    // }
+    // const handleWorkGroups = () => {
+    //     window.location = '#/WorkGroups';
+    // }
     return (
         <>
             <div class="navbar">
                 <div class="dropdown">
-                    <button class="dropbtn" onClick={handleHome}>Home
+                    <button class="dropbtn" onClick={() => navigate("/")}>Home
                         <i class="fa fa-caret-down"></i>
                     </button>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn" onClick={handleAbout}>About IHAPS
+                    <button class="dropbtn" onClick={() => navigate("/About")}>About IHAPS
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -37,7 +40,7 @@ export default function Navigationbar() {
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn" onClick={handleWorkGroups}>WorkGroups
+                    <button class="dropbtn" onClick={() => navigate("/WorkGroups")}>WorkGroups
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -51,7 +54,7 @@ export default function Navigationbar() {
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn" onClick={handleWorkgroupsreport}>Reports and Data
+                    <button class="dropbtn" onClick={() => navigate("/Workgroupsreport")}>Reports and Data
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -68,7 +71,7 @@ export default function Navigationbar() {
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn" onClick={handleParticipation}>Login & Sign Up
+                    <button class="dropbtn" onClick={() => navigate("/Participation")}>Login & Sign Up
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">

@@ -5,21 +5,23 @@ import Logo from "./images/IHAPS-LOGO.png"
 import { Link } from "react-router-dom";
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
+import { useNavigate } from "react-router-dom";
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import DirectionsIcon from '@mui/icons-material/Directions';
 export default function Topappbar() {
-    const handleIHAPSHome=()=>{
-        window.location="/";
-    }
+    const navigate = useNavigate();
+    // const handleIHAPSHome=()=>{
+    //     window.location="/";
+    // }
     return (
         <>
             <div style={{display:"flex",flexDirection:"row"}}>
                 <div className='top-app-bar'>
                     <ul className="Top-bar-list">
-                        <li onClick={handleIHAPSHome}>IHAPS Home</li><span style={{ fontWeight: 80, fontSize: 20 }}>&#47;</span>
+                        <li onClick={() => navigate("/")}>IHAPS Home</li><span style={{ fontWeight: 80, fontSize: 20 }}>&#47;</span>
                         <a href="https://www.uhcl.edu/sustainability/about/" target="blank" style={{textDecoration:"none"}}><li>About</li></a><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>
                         <a href="https://www.uhcl.edu/sustainability/history/" target="blank" style={{textDecoration:"none"}}><li>History</li></a><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>
                         <a href="https://www.uhcl.edu/sustainability/news-events/" target="blank" style={{textDecoration:"none"}}><li>News and Events</li></a><span style={{ fontWeight: 800, fontSize: 20 }}>&#47;</span>

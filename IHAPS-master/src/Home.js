@@ -8,6 +8,7 @@ import Environmental from "./images/Environmental.png"
 import Logo from "./images/IHAPS-LOGO.png"
 import React from 'react';
 import Appbar from './Appbar';
+import App from './App';
 import Footer from './Footer';
 import { AppBar, Typography, Toolbar } from '@mui/material'
 import Navigationbar from './Navigationbar';

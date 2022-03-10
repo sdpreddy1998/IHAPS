@@ -1,10 +1,10 @@
 import './App.css';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
-import React , { Component}  from 'react';
+import React   from 'react';
 import Appbar from './Appbar';
 import Footer from './Footer';
-import { AppBar, Typography, Toolbar } from '@mui/material'
+// import { AppBar, Typography, Toolbar } from '@mui/material'
 import Navigationbar from './Navigationbar';
 import Topappbar from './Topappbar';
 function Register() {
